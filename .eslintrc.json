@@ -1,6 +1,9 @@
 {
   "extends": "./node_modules/gts",
   "root": true,
+  "rules": {
+    "prettier/prettier": 0
+  },
   "overrides": [
     {
       "files": "test/*.ts",
