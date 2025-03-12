@@ -66,6 +66,10 @@ inputs:
     description: 'The proto://host where commits live. Default `https://github.com`'
     required: false
     default: ${{ github.server_url }}
+  dry-run:
+    description: 'if set to true, the action lists build releases and/or PRs but does not create them'
+    required: false
+    default: false
 runs:
   using: 'node20'
   main: 'dist/index.js'
